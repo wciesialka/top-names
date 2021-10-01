@@ -5,6 +5,10 @@ typename = lambda x : x.__class__.__name__
 
 class NameScalper:
 
+    """
+    Iterator that takes a site, scrapes it for names, and iterates through the names.
+    """
+
     def __init__(self, site:str):
         self.site = site
         self.__rows = None
