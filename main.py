@@ -40,7 +40,7 @@ def main(*, output:TextIO = stdout, verbose:bool = False, time_between_requests:
                     print(f"\tWrote name \"{name}\"")
 
         # Sleep to be nice.
-        sleep(time_between_requests//1000)
+        sleep(time_between_requests/1000)
 
     if(verbose):
         print("Done.")
