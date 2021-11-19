@@ -2,18 +2,21 @@
 
 Program to scrape from the most common first names (male and female) in the United States from the decades 1880s-2010s.
 Data provided by the Social Security Admnistration.
-If you do not want to run the program, you can view the results as of October 1st, 2021 in [output.txt](output.txt).
+If you do not want to run the program, you can view the results as of November 18th, 2021 in [output.txt](output.txt).
 
-## Running
+## Getting Started
 
-Program can be ran using `python main.py`. Optional command line arguments include:
+### Installing
 
-```
---output, -o OUTPUT
-    Output destination. Expects a file in text write mode. Defaults to sys.stdout.
---verbose, -v
-    Optional flag to print verbose output.
-```
+Simply run `python3 setup.py install` to install the package.
+
+### Usage
+
+After installing, you should use the `top_names.name_list.NameList` class. This is a wrapper class of a list that is generated dynamically by the `top_names.name_scraper.NameScraper` class. Initially, the list is empty, but when trying to retrieve data from the list, it will be populated.
+
+### Running
+
+You can run the module itself using `python3 -m top_names`. By default, this will output to `stdout`. You can specify a file to write to using the `-o` option. You may also see debug information with the `-d` flag.
 
 ## Requirements
 
