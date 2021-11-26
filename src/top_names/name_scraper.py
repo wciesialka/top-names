@@ -56,13 +56,12 @@ class NameScraper:
     def __next__(self):
         if self.__i >= len(self.__rows):
             raise StopIteration
+        tr = self.__rows[self.__i]
+        cells = tr.find_all('td')
+        if self.__dual:
+            self.__dual = False
+            self.__i += 1
+            return cells[3].get_text()
         else:
-            tr = self.__rows[self.__i]
-            cells = tr.find_all('td')
-            if self.__dual:
-                self.__dual = False
-                self.__i += 1
-                return cells[3].get_text()
-            else:
-                self.__dual = True
-                return cells[1].get_text()
+            self.__dual = True
+            return cells[1].get_text()
