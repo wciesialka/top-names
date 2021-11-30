@@ -8,7 +8,7 @@ If you do not want to run the program, you can view the results as of November 2
 
 ### Installing
 
-Simply run `python3 setup.py install` to install the package.
+Simply run `python3 setup.py install` to install the package. You can also install the package from PyPI using `pip install top-names`
 
 ### Usage
 
