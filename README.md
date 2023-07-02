@@ -29,7 +29,7 @@ Data scraped from the [United States Social Security Administration](https://www
 
 ## Authors
 
-- Will Ciesialka
+- Willow Ciesialka
 
 ## License
 
